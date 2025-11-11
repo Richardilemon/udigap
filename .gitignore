@@ -1,0 +1,123 @@
+# ============================================
+# udigap .gitignore
+# ============================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# ---- Virtual environments ----
+venv/
+.env/
+env/
+.venv/
+ENV/
+
+# ---- Logs and debug ----
+*.log
+*.out
+*.err
+*.pid
+
+# ---- IDE / Editor configs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+.DS_Store
+
+# ---- Jupyter / Notebooks ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- Data & Temporary Files ----
+data/raw/
+data/tmp/
+data/cache/
+data/temp/
+data/backup/
+*.csv
+*.json
+*.geojson
+*.parquet
+*.zip
+*.tar.gz
+
+# ---- Model Artifacts ----
+ml/models/
+ml/outputs/
+*.pkl
+*.joblib
+*.h5
+
+# ---- Secrets / Configs ----
+.env
+*.key
+*.pem
+config/*.yaml
+config/*.yml
+config/*.json
+!config/db_config.example.yaml  # keep sample config only
+
+# ---- Docker ----
+docker/*.env
+docker/volumes/
+*.log
+*.pid
+
+# ---- Build / Distribution ----
+build/
+dist/
+*.whl
+
+# ---- DVC / Cache ----
+.dvc/
+.dvcignore
+*.dvc
+
+# ---- OS / Misc ----
+Thumbs.db
+ehthumbs.db
+desktop.ini
+._*
+.Spotlight-V100
+.Trashes
+
+# ---- Docs and Resources ----
+/docs/
+/resources/
+
+# ---- Test Artifacts ----
+htmlcov/
+.tox/
+coverage/
+*.coverage
+.coverage.*
+.cache/
+nosetests.xml
+junit*.xml
+
+# ---- Streamlit Caches ----
+.streamlit/
+.streamlit_cache/
+.streamlit_logs/
+
+# ---- Airflow / Temp Logs ----
+airflow/logs/
+*.db
+*.sqlite
+
+
+# Ignore documentation and resource folders
+/docs/
+/resources/

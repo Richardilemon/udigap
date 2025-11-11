@@ -1,0 +1,21 @@
+# Handle line endings
+* text=auto
+
+# Keep notebooks and geo files binary-safe
+*.ipynb binary
+*.geojson binary
+*.parquet binary
+*.tif binary
+*.tiff binary
+
+# Mark Python and config files as text
+*.py text
+*.yaml text
+*.yml text
+*.sql text
+*.md text
+*.json text
+
+# Improve GitHub linguist detection
+docs/* linguist-documentation=true
+resources/* linguist-vendored=true
