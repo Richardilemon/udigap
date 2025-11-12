@@ -195,4 +195,4 @@ POST /nlquery
 
 ## 📜 **License**
 
-MIT License © 2025 Richard Ilupeju
+© 2025 Richard Ilupeju
