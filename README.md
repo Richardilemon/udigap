@@ -1,4 +1,4 @@
-# 🛰️ **udigap**
+#  **udigap**
 
 ### *Geospatial Connectivity Intelligence Platform for Nigeria*
 
@@ -7,7 +7,7 @@
 
 ---
 
-## ⚡ **Core Idea**
+##  **Core Idea**
 
 > Nigeria’s broadband expansion is accelerating, but spatial visibility into who is connected — and who’s left behind — remains fragmented.
 > udigap bridges that gap by integrating datasets on **fiber routes**, **population**, **economic activity**, and **public facilities** to produce actionable connectivity insights.
@@ -21,7 +21,7 @@ You can ask udigap:
 
 ---
 
-## 🧱 **System Architecture**
+##  **System Architecture**
 
 ```
 External Datasets (NCC • OSM • GRID3 • VIIRS)
@@ -41,7 +41,7 @@ Predictions (fiber_priority_zones)  →  Streamlit Dashboard
 
 ---
 
-## 🗂️ **Repository Structure**
+##  **Repository Structure**
 
 ```
 udigap/
@@ -57,7 +57,7 @@ udigap/
 
 ---
 
-## ⚙️ **Tech Stack**
+##  **Tech Stack**
 
 | Layer                   | Tools                                         |
 | ----------------------- | --------------------------------------------- |
@@ -71,19 +71,19 @@ udigap/
 
 ---
 
-## 🔍 **Features**
+##  **Features**
 
 | Category                              | Description                                                                                |
 | ------------------------------------- | ------------------------------------------------------------------------------------------ |
-| 🗺️ **Connectivity Mapping**          | Combines NCC fiber data, OSM routes, and GRID3 population grids to show coverage and gaps. |
-| 🤖 **Natural-Language Queries**       | Ask analytical questions in plain English via LangChain + FastAPI.                         |
-| 📊 **Spatial Analytics**              | Fiber-to-population ratios, urban-rural differentials, and proximity statistics.           |
-| 🧠 **Predictive Insights (Optional)** | Machine-learning models estimate high-impact zones for new fiber deployment.               |
-| 🧩 **Extensible Design**              | Easily integrate new data layers like schools, hospitals, or land-cover maps.              |
+|  **Connectivity Mapping**          | Combines NCC fiber data, OSM routes, and GRID3 population grids to show coverage and gaps. |
+|  **Natural-Language Queries**       | Ask analytical questions in plain English via LangChain + FastAPI.                         |
+|  **Spatial Analytics**              | Fiber-to-population ratios, urban-rural differentials, and proximity statistics.           |
+|  **Predictive Insights (Optional)** | Machine-learning models estimate high-impact zones for new fiber deployment.               |
+|  **Extensible Design**              | Easily integrate new data layers like schools, hospitals, or land-cover maps.              |
 
 ---
 
-## 💡 **Example Use-Cases**
+##  **Example Use-Cases**
 
 * **Connectivity Assessment** — Identify underserved LGAs with low fiber-to-population ratios.
 * **Infrastructure Planning** — Model where new fiber routes should go for maximum reach.
@@ -92,16 +92,16 @@ udigap/
 
 ---
 
-## 🚀 **Quick Start**
+##  **Quick Start**
 
-### **1️⃣ Clone the repo**
+### **1️ Clone the repo**
 
 ```bash
 git clone https://github.com/Richardilemon/udigap.git
 cd udigap
 ```
 
-### **2️⃣ Create environment**
+### **2️ Create environment**
 
 ```bash
 python3 -m venv venv
@@ -109,14 +109,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### **3️⃣ Setup PostgreSQL + PostGIS**
+### **3️ Setup PostgreSQL + PostGIS**
 
 ```bash
 psql -U postgres -c "CREATE DATABASE udigap;"
 psql -d udigap -f sql/create_tables.sql
 ```
 
-### **4️⃣ Run the ETL pipeline**
+### **4️ Run the ETL pipeline**
 
 ```bash
 python etl/extract_data.py
@@ -124,13 +124,13 @@ python etl/transform_data.py
 python etl/load_data.py
 ```
 
-### **5️⃣ Start the API**
+### **5️ Start the API**
 
 ```bash
 uvicorn api.app:app --reload
 ```
 
-### **6️⃣ Launch the dashboard**
+### **6️ Launch the dashboard**
 
 ```bash
 streamlit run dashboard/app.py
@@ -138,7 +138,7 @@ streamlit run dashboard/app.py
 
 ---
 
-## 🧠 **Optional: Machine Learning Layer**
+##  **Optional: Machine Learning Layer**
 
 > The ML component predicts where new fiber deployments will yield the highest impact.
 
@@ -155,7 +155,7 @@ Outputs saved to:
 
 ---
 
-## 🗺️ **Example NL Query**
+##  **Example NL Query**
 
 ```bash
 POST /nlquery
@@ -175,24 +175,24 @@ POST /nlquery
 
 ---
 
-## 🌍 **Future Extensions**
+##  **Future Extensions**
 
 | Module                    | Description                                              |
 | ------------------------- | -------------------------------------------------------- |
-| 📈 Planning Optimization  | Route cost modeling via NetworkX                         |
-| 🧾 Market Analytics       | Operator-level fiber share & demand forecasting          |
-| 🧮 Change Detection       | Monitor monthly coverage growth                          |
-| 🛰️ Urban Growth Modeling | Integrate Sentinel-2 & GEE data for expansion prediction |
+|  Planning Optimization  | Route cost modeling via NetworkX                         |
+|  Market Analytics       | Operator-level fiber share & demand forecasting          |
+|  Change Detection       | Monitor monthly coverage growth                          |
+|  Urban Growth Modeling | Integrate Sentinel-2 & GEE data for expansion prediction |
 
 ---
 
-## 🧭 **Why udigap Matters**
+##  **Why udigap Matters**
 
 > By merging **data engineering**, **geospatial intelligence**, and **AI-driven analytics**,
 > udigap transforms open infrastructure data into actionable insights that can accelerate Nigeria’s digital inclusion and broadband expansion goals.
 
 ---
 
-## 📜 **License**
+## **License**
 
 © 2025 Richard Ilupeju
